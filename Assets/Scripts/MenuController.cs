@@ -3,19 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuController : MonoBehaviour
+public class Menucontroller : MonoBehaviour
 {
     public void ButtonStart()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void ButtonCredit()
-    {
-        SceneManager.LoadScene(2);
-    }
-
-    public void Buttonquit()
+    public void ButtonQuit()
     {
         Application.Quit();
     }
