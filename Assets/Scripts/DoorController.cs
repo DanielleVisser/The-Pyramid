@@ -13,18 +13,18 @@ public class DoorController : MonoBehaviour
         
         if (doorIsOpening == true)
         {
-            Door.transform.Translate(Vector3.up * Time.deltaTime * 5);
-            //if the bool is true it opens the door
+            Door.transform.Translate(Vector3.up * Time.deltaTime * 3); //Slowing down the opening of the gateway
+
         }
-        if (Door.transform.position.y > 15f)
+        if (Door.transform.position.y > 15f) //How far does the gate open
         {
             doorIsOpening = false;
         }
 
-        void OnMouseDown()
-        {
-            doorIsOpening = true;
-        }
+    }
 
+    void OnMouseDown()
+    {
+        doorIsOpening = true;
     }
 }
